@@ -38,7 +38,7 @@ const Signup = (props) => {
                     <div className="consent">
                         <input className="checkbox" type="checkbox" required />
                         <small>
-                            I agree to receive information from Interactive Nerd in accordance with the following <a className="privacy-link" href="#">Privacy Policy</a>
+                            I agree to receive information from Interactive Nerd in accordance with the following Privacy Policy
                         </small>
                     </div>
                 </>
