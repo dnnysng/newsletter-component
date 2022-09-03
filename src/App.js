@@ -1,13 +1,13 @@
-import Newsletter from './components/newsletter/Newsletter'
+import Newsletter from "./components/newsletter/NewsletterC";
 
-import style from './App.module.css'
+import style from "./App.module.css";
 
 function App() {
-  return (
-    <div className={`${style.container} ${style.theme}`}>
-      <Newsletter />
-    </div>
-  );
+    return (
+        <div className={`${style.container} ${style.theme}`}>
+            <Newsletter />
+        </div>
+    );
 }
 
 export default App;
