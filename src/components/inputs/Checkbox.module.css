@@ -1,0 +1,17 @@
+.terms {
+  text-align: left;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.small {
+  margin-left: 12px;
+  color: var(--secondary);
+  font-family: 'Azo Light', sans-serif;
+}
+
+.error {
+  margin-top: 6px;
+  color: var(--button-bg);
+  text-align: left;
+}

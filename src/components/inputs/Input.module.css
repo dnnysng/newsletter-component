@@ -1,0 +1,44 @@
+.inputWrapper {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  min-width: 200px;
+  height: 40px;
+  background: var(--input-bg);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 12px;
+  color: white;
+  text-align: left;
+}
+
+.error {
+  margin-top: 6px;
+  color: var(--button-bg);
+  text-align: left;
+}
+
+.input:focus {
+  border: 2px solid var(--primary);
+}
+
+.input::placeholder {
+  color: var(--input-text);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .inputWrapper:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  .input {
+    text-align: center;
+  }
+}

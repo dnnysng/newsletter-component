@@ -1,0 +1,20 @@
+.theme {
+  --bg: #120f23;
+  --primary: #b6fdbf;
+  --secondary: #94aebf;
+  --button-bg: #ed1f34;
+  --button-hover: #ed1f34aa;
+  --button-text: #ffffff;
+  --input-bg: rgba(255, 255, 255, 0.1);
+  --input-text: rgba(255, 255, 255, 0.4);
+}
+
+.container {
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Azo', sans-serif;
+  height: 100%;
+  min-height: 100vh;
+}

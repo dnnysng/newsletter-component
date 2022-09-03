@@ -1,25 +1,24 @@
-import React, { useState } from 'react'
-import Signup from './Signup/Signup'
-import './Newsletter.css'
+import { useState } from "react";
 
-const Newsletter = () => {
+import SignupForm from "./SignupForm";
 
-    const [form, setForm] = useState(1)
+import style from "./Newsletter.module.css";
 
-    const pull_data = (data) => { setForm(data) }
-
+export default function Newsletter() {
+    const [step, setStep] = useState(1);
+    const instruction = [
+        "Sign up for the IN-Dex newsletter!",
+        "Almost done! Enter you first and last name!",
+        "Thank you for signing up!",
+    ];
     return (
-        <div className="newsletter">
-            {form === 3 ? <h1 className="newsletter--title">congratulations!</h1> : <h1 className="newsletter--title">join the list</h1>}
-            <div className="newsletter-right">
-                {form === 1 && <h3 className="newsletter--subtitle">SIGN UP FOR <br className="next-line" />THE IN-Dex NEWSLETTER</h3>}
-                {form === 2 && <h3 className="newsletter--subtitle">ALMOST DONE! PLEASE ENTER <br className="next-line" />YOUR FIRST AND LAST NAME</h3>}
-                {form === 3 && <h2 className="newsletter--closing">Thank You For <br className="next-line" />Signing Up</h2>}
-
-                <Signup func={pull_data} />
+        <div className={style.container}>
+            <span className={style.title}>{step === 3 ? "congratulations" : "join the list"}</span>
+            <div className={style.signup}>
+                <span className={style.instruction}>{instruction[step - 1]}</span>
+                {step === 3 && <p className={style.text}>Look out for the latest news on your favorite tech!</p>}
+                <SignupForm step={step} setStep={setStep} />
             </div>
         </div>
-    )
+    );
 }
-
-export default Newsletter
