@@ -1,11 +1,11 @@
-import Newsletter from "./components/newsletter/NewsletterC";
+import NewsletterCopy from "./components/newsletter/NewsletterCopy";
 
 import style from "./App.module.css";
 
 function App() {
     return (
         <div className={`${style.container} ${style.theme}`}>
-            <Newsletter />
+            <NewsletterCopy />
         </div>
     );
 }

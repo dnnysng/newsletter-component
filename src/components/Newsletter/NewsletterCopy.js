@@ -4,7 +4,7 @@ import SignupForm from "./SignupForm";
 
 import style from "./Newsletter.module.css";
 
-export default function Newsletter() {
+export default function NewsletterCopy() {
     const [step, setStep] = useState(1);
     const instruction = [
         "Sign up for the IN-Dex newsletter!",
